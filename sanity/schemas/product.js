@@ -17,11 +17,8 @@ export default {
         },
         {
             name: 'image',
-            title: 'Image',
-            type: 'image',
-            options: {
-                hotspot: true
-            }
+            title: 'Image URL',
+            type: 'url',
         },
         {
             name: 'lprice',

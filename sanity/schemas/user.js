@@ -6,35 +6,27 @@ export default {
     title: 'User',
     fields: [
         {
-            name: 'username',
-            type: 'string',
-            title: 'Username',
-            validation: Rule => Rule.required()
-        },
-        {
             name: 'email',
             type: 'string',
             title: 'Email',
             validation: Rule => Rule.required().email()
         },
         {
-            name: 'password',
+            name: 'name',
             type: 'string',
-            title: 'Password',
-            hidden: true, // 패스워드는 관리자 인터페이스에서 숨깁니다
+            title: 'Name',
+            validation: Rule => Rule.required()
         },
         {
-            name: 'profileImage',
-            type: 'image',
-            title: 'Profile Image',
-            options: {
-                hotspot: true, // 이미지 핫스팟 활성화
-            },
+            name: 'username',
+            type: 'string',
+            title: 'Username',
+            validation: Rule => Rule.required()
         },
         {
-            name: 'isAdmin',
-            type: 'boolean',
-            title: 'Is Admin',
-        },
+            name: 'image',
+            type: 'string',
+            title: 'Profile Image'
+        }
     ],
 };
